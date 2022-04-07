@@ -16,6 +16,7 @@ console.log(kmNumber, typeof(kmNumber), ageNumber, typeof(ageNumber));
 // calcolo del prezzo del biglietto in base ai km
 const ticketPrice = kmNumber * 0.21;
 console.log(ticketPrice, typeof(ticketPrice));
+const euroSymbol = ('€');
 let discount;
 
 if (ageNumber < 18) {
@@ -33,3 +34,7 @@ if (ageNumber < 18) {
 // calcolo del prezzo dopo lo sconto
 let finalPrice = ticketPrice - discount;
 console.log(finalPrice, typeof(finalPrice));
+// Output prezzo finale con massimo ue decimali
+const humanPrice = finalPrice.toFixed(2);
+// Stampiamo il risultato
+document.getElementById("result").innerHTML = humanPrice + euroSymbol;

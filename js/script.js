@@ -7,6 +7,6 @@
 
 // DICHIARAZIONI
 // chiedi all'utente il numero di km che vuole percorrere e la sua età
-const kmNumber = prompt ('Qanti chilometri');
-const ageNumber = prompt ('Quanti anni hai');
-console.log(kmNumber, ageNumber);
+const kmNumber = parseInt(prompt('Qanti chilometri'));
+const ageNumber = parseInt(prompt('Quanti anni hai'));
+console.log(kmNumber, typeof(kmNumber), ageNumber, typeof(ageNumber));

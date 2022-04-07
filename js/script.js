@@ -10,3 +10,9 @@
 const kmNumber = parseInt(prompt('Qanti chilometri'));
 const ageNumber = parseInt(prompt('Quanti anni hai'));
 console.log(kmNumber, typeof(kmNumber), ageNumber, typeof(ageNumber));
+
+// ELABORAZIONE
+// il prezzo del biglietto è definito in base ai km (0.21 € al km)
+// calcolo del prezzo del biglietto in base ai km
+const ticketPrice = kmNumber * 0.21;
+console.log(ticketPrice, typeof(ticketPrice))

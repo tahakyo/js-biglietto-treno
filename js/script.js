@@ -15,4 +15,18 @@ console.log(kmNumber, typeof(kmNumber), ageNumber, typeof(ageNumber));
 // il prezzo del biglietto è definito in base ai km (0.21 € al km)
 // calcolo del prezzo del biglietto in base ai km
 const ticketPrice = kmNumber * 0.21;
-console.log(ticketPrice, typeof(ticketPrice))
+console.log(ticketPrice, typeof(ticketPrice));
+let discount;
+
+if (ageNumber < 18) {
+    // ::va applicato uno sconto del 20% per i minorenni
+    discount = (ticketPrice * 20) / 100;
+    console.log(discount, typeof(discount));
+} else if (ageNumber > 65) {
+    // ::va applicato uno sconto del 40% per gli over 65.
+    discount = (ticketPrice * 40) / 100;
+    console.log(discount, typeof(discount));
+} else if (ageNumber >= 18 && ageNumber < 65) {
+    discount = 0;
+    console.log(discount, typeof(discount))
+}

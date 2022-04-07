@@ -30,3 +30,6 @@ if (ageNumber < 18) {
     discount = 0;
     console.log(discount, typeof(discount))
 }
+// calcolo del prezzo dopo lo sconto
+let finalPrice = ticketPrice - discount;
+console.log(finalPrice, typeof(finalPrice));
